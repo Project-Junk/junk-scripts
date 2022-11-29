@@ -6,7 +6,7 @@ sleep 1s
 echo -e "installing required packages using pacman"
 sleep 1s
 
-sudo pacman -S git jq clash feh dunst i3-gaps automake make autoconf dbus-python i3blocks mpd ncmpcpp neovim rofi i3lock gnome-screenshot alacritty ttf-font-awesome playerctl
+sudo pacman -S git jq glava clash feh dunst i3-gaps automake make autoconf dbus-python i3blocks mpd ncmpcpp neovim rofi i3lock gnome-screenshot alacritty ttf-font-awesome playerctl
 sleep 1s
 
 git clone https://aur.archlinux.org/yay.git ~/yay 
