@@ -6,7 +6,7 @@ sleep 1s
 echo -e "installing required packages using pacman"
 sleep 1s
 
-sudo pacman -S git jq glava clash feh dunst i3-gaps automake make autoconf dbus-python i3blocks mpd ncmpcpp neovim rofi i3lock gnome-screenshot alacritty ttf-font-awesome playerctl
+sudo pacman -S git zathura zathura-pdf-mupdf ranger jq glava clash feh dunst i3-gaps automake make autoconf dbus-python i3blocks mpd ncmpcpp neovim rofi i3lock gnome-screenshot alacritty ttf-font-awesome playerctl
 sleep 1s
 
 git clone https://aur.archlinux.org/yay.git ~/yay 
@@ -21,7 +21,7 @@ sleep 1s
 echo -e "fetching the gruvbox dotfiles from github"
 sleep 1s
 
-git clone --bare https://github.com/sourav2k/dotfiles.git -b i3-gaps-thefallnn $HOME/.cfg
+git clone --bare https://github.com/sourav2k/dotfiles.git -b i3gaps-gruvbox-devs $HOME/.cfg
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
